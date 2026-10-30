@@ -11,18 +11,16 @@ AI 서비스의 기획·백엔드 통합·실제 데이터 기반 검증을 경�
   <img src="assets/badges/actions.svg" alt="GitHub Actions" height="25" />
 </p>
 
-<br>
-
 ### 프로젝트
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="400" valign="top">
 <h3><a href="https://github.com/oojoyhh/KeepIt">KeepIt</a></h3>
 <p><b>AI 링크 아카이빙</b><br>기획·백엔드 통합·주간 리포트 API 담당.<br>실제 기록 약 200건으로 AI 출력 검증.</p>
 <sub>Python · FastAPI · Supabase · RAG</sub>
 </td>
-<td width="50%" valign="top">
+<td width="400" valign="top">
 <h3><a href="https://github.com/oojoyhh/daetaguham">대타구함</a></h3>
 <p><b>교대 관리 서비스 · 1인 개발</b><br>기획부터 DB·API 설계,<br>백엔드 구현·배포까지.</p>
 <sub>Java · Spring Boot · PostgreSQL</sub>
@@ -30,12 +28,12 @@ AI 서비스의 기획·백엔드 통합·실제 데이터 기반 검증을 경�
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="400" valign="top">
 <h3><a href="https://github.com/oojoyhh/spot-agent">StudySpot</a></h3>
 <p><b>스터디카페 입지 추천</b><br>6개 지표의 추천 점수 계산과<br>공통 데이터 모델 설계.</p>
 <sub>Python · Pydantic · LangChain</sub>
 </td>
-<td width="50%" valign="top">
+<td width="400" valign="top">
 <h3><a href="https://github.com/oojoyhh/skala-KV-cache">KV-cache 평가 Agent</a></h3>
 <p><b>기술 평가 보고서 자동화</b><br>근거 인용·참고문헌을 연결하는<br>PDF 보고서 생성 로직 구현.</p>
 <sub>Python · LangGraph · fpdf2</sub>
