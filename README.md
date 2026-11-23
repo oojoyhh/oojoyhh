@@ -1,74 +1,24 @@
 # 김효주
 
-만든 기능이 실제로 나아졌는지 숫자로 확인하고 넘어갑니다.
+요즘은 SKALA에서 백엔드와 AI를 공부하고 있어요. 수업에서 배운 건 [skala-log](https://github.com/oojoyhh/skala-log)에, 백준에서 푼 문제는 [algo-log](https://github.com/oojoyhh/algo-log)에 모아두고 있습니다.
 
-<p>
-  <img src="assets/badges/python.svg" alt="Python" height="25" />
-  <img src="assets/badges/fastapi.svg" alt="FastAPI" height="25" />
-  <img src="assets/badges/langgraph.svg" alt="LangGraph" height="25" />
-  <img src="assets/badges/spring.svg" alt="Spring Boot" height="25" />
-  <img src="assets/badges/postgres.svg" alt="PostgreSQL" height="25" />
-  <img src="assets/badges/actions.svg" alt="GitHub Actions" height="25" />
-</p>
+### [KeepIt](https://github.com/oojoyhh/KeepIt)
 
-<br>
+저장한 링크의 제목이 기억나지 않아도 내용으로 다시 찾을 수 있는 서비스예요. 팀에서 기획과 백엔드 통합을 맡았고, 한 주 동안 내가 어떤 주제의 링크를 많이 저장했는지 보여주는 **주간 리포트 API**를 만들었어요.
 
-## 프로젝트
+검색을 만들 때 가장 궁금했던 건 “결과 순서를 한 번 더 매기면 찾던 링크가 정말 맨 위에 뜰까?”였어요. 같은 질문 107개로 비교해 보니 정답이 첫 번째로 뜬 경우는 66개에서 88개로 늘었고, 다섯 번째 안에 든 경우는 96개에서 94개로 줄었어요. KeepIt에서는 첫 결과를 더 중요하게 보고 리랭킹을 적용했습니다.
 
-**[KeepIt](https://github.com/oojoyhh/KeepIt)** — AI 링크 아카이빙
+### [대타구함](https://github.com/oojoyhh/daetaguham) · [데모](https://oojoyhh.github.io/daetaguham/)
 
-저장한 링크를 AI가 분류하고 요약해 자연어로 찾습니다.  
-**5인 팀 프로젝트 · 기획·백엔드 통합·주간 리포트 API·검색 품질 평가 담당**
+단톡방에서 대타를 구하고 나면 근무표도 따로 고쳐야 하잖아요. 대타구함에서는 점장이 교대를 승인하면 근무표에 바로 반영돼요. 제가 기획하고 DB와 API를 설계했고, 구현에는 AI 코딩 도구를 썼어요. 승인한 뒤 실제로 근무표가 바뀌는 과정까지 테스트했습니다.
 
-검색에 LLM 리랭킹을 넣을지 정하려고 문서 **129건**과 질문 **107개**로 비교 환경을 만들었습니다.
-정답이 1위로 나온 질문은 **66개에서 88개**로 늘었고, 상위 5건 안에 정답이 있는 질문은 **96개에서 94개**로 줄었습니다.
-사용자가 상위 몇 건만 본다는 점을 근거로 적용했고, 빠진 2건은 점수 하한 문제로 기록해 남겼습니다.
+### SKALA에서 만든 것들
 
-`Python` `FastAPI` `Supabase` `pgvector` `RAG`
+- [StudySpot](https://github.com/oojoyhh/spot-agent)에서 스터디카페 입지 점수를 계산하는 코드를 맡았어요. 비교 목록에 다른 동네를 추가해도 원래 있던 동네의 점수는 그대로 유지되도록 여섯 지표의 기준을 정했습니다.
+- [KV cache 기술 평가](https://github.com/oojoyhh/skala-KV-cache)에서는 PDF 보고서를 만드는 부분을 맡았어요. 본문에 붙은 인용 번호로 어떤 논문이나 자료를 썼는지 참고문헌에서 찾아볼 수 있어요.
 
-<br>
+### 율촌 지식관리팀 인턴 · 2025.01–06
 
-**[대타구함](https://github.com/oojoyhh/daetaguham)** — 교대 관리 서비스
+매주 법무코드 약 600건을 지난 기록과 대조하는 일이 있었어요. 엑셀 수식으로 새로 생기거나 달라진 항목을 골라내면서, 주 5일에 걸쳐 하던 확인을 이틀로 줄였어요.
 
-대타 요청부터 지원, 승인, 근무표 반영까지 연결합니다.
-기획과 DB, API 설계를 맡고 구현은 AI 코딩 도구로 진행한 뒤
-E2E와 통합 테스트, GitHub Actions로 검증했습니다.
-
-[데모 보기 ↗](https://oojoyhh.github.io/daetaguham/)
-
-`Java` `Spring Boot` `PostgreSQL` `GitHub Actions`
-
-<br>
-
-**[StudySpot](https://github.com/oojoyhh/spot-agent)** — 스터디카페 입지 추천
-
-같은 상권이라도 함께 비교한 후보에 따라 점수가 달라지면 추천을 믿을 수 없다고 보고,
-6개 지표의 기준을 고정해 같은 입력에 같은 결과가 나오게 만들었습니다.
-
-`Python` `Pydantic` `LangChain`
-
-<br>
-
-**[KV-cache 평가 Agent](https://github.com/oojoyhh/skala-KV-cache)** — 기술 평가 보고서 자동화
-
-근거 인용과 참고문헌을 연결하는 PDF 보고서 생성 로직을 구현했습니다.
-
-`Python` `LangGraph` `fpdf2`
-
-<br>
-
-## 경험
-
-**법무법인(유) 율촌 · 지식관리팀 인턴** &nbsp; 2025.01 – 2025.06
-
-매주 약 600건의 자료 대조를 COUNTIFS와 INDEX/MATCH 배열수식으로
-자동 판정하게 바꾸고 절차를 문서화했습니다.
-주 5일에 걸치던 확인이 2일 흐름으로 줄었습니다.
-
-<br>
-
-## 기록
-
-[SKALA 학습](https://github.com/oojoyhh/skala-log) ·
-[알고리즘](https://github.com/oojoyhh/algo-log) ·
 [리포트 자동화 봇](https://github.com/oojoyhh/report_bot)
